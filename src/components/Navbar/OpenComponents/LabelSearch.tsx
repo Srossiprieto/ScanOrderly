@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SearchIcon from "../../../assets/SearchIcon";
 import { X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function LabelSearch() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -32,14 +33,15 @@ function LabelSearch() {
                 onClick={handleClose}
                 className="text-gray-300 hover:text-white focus:outline-none"
               >
-              <X />
+                <X />
               </button>
             </div>
             <input
               type="search"
-              className="w-full bg-transparent text-white rounded-md py-2 px-4 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+              className="w-full bg-transparent text-white rounded-md py-2 mb-2 px-4 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
               placeholder="Search..."
             />
+            <Link to="/" onClick={handleClose} className="mt-4 text-gray-500 cursor-pointer hover:text-blue-500">&copy; ScanOrderly</Link>
           </div>
         </div>
       )}

@@ -10,11 +10,12 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
 
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --hover-gray: #4a4a4a38;
+  --hover-gray-light: #6a6a6a38; /* Nuevo color de hover más luminoso */
 
   .card {
     backdrop-filter: blur(16px) saturate(180%);
@@ -24,5 +25,31 @@
     border: 1px solid rgba(192, 192, 192, 0.125);
   }
 
-}
+  .bg-gray-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 21 25 / var(--tw-bg-opacity));
+  }
 
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    background-color: rgb(21 21 25 / var(--tw-bg-opacity));
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-transparent {
+    background-color: transparent;
+  }
+
+  .hover-gray {
+    background-color: var(--hover-gray);
+  }
+
+  .hover-gray-light {
+    background-color: var(--hover-gray-light);
+  }
+}

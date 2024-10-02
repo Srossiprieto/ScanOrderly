@@ -1,8 +1,8 @@
 
 function Footer() {
   return (
-    <div className="relative max-w-screen-lg mx-auto bg-red-500">
-      Footer
+    <div className="flex flex-col max-w-screen-lg mx-auto">
+      <h4>Footer</h4>
     </div>
   )
 }

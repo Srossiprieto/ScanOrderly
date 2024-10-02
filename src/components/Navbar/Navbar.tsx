@@ -1,39 +1,57 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ScanOrderly from "../../assets/ScanOrderly";
 import CardNav from "./OpenComponents/CardNav";
 import LabelSearch from "./OpenComponents/LabelSearch";
 import MenuResponsive from "./OpenComponents/MenuResponsive";
 
-
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <>
-      <nav className="p-3 relative top-0 border-b border-[#25252B] mx-auto">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-5">
-            <Link to="/">
-              <ScanOrderly width={35} height={35} />
-            </Link>
-            <div className="hidden md:flex space-x-4">
-              <Link to="/" className="text-gray-300 hover:text-white">
-                Home
-              </Link>
-              <Link to="/about" className="text-gray-300 hover:text-white">
-                About
-              </Link>
-              <Link to="/contact" className="text-gray-300 hover:text-white">
-                Contact
-              </Link>
-              <CardNav text="More"/>
+    <nav className={`fixed-navbar p-3 border-b border-[#25252B] mx-auto ${isScrolled ? "navbar-transparent" : ""}`}>
+      <div className="container mx-auto flex justify-between items-center max-w-screen-lg">
+        <div className="flex items-center gap-5 text-[14px] text-[#b1b3b6] font-normal">
+          <Link to="/">
+            <div className="flex items-center gap-2">
+              <ScanOrderly width={28} height={28} />
+              <p className="font-bold text-[1rem] text-[#edeef1]">ScanOrderly</p>
             </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <LabelSearch />
-            <MenuResponsive />
+          </Link>
+          <div className="hidden md:flex space-x-4">
+            <Link to="/" className="hover:text-white">
+              Home
+            </Link>
+            <Link to="/about" className="hover:text-white">
+              About
+            </Link>
+            <Link to="/contact" className="hover:text-white">
+              Contact
+            </Link>
+            <CardNav text="More" />
           </div>
         </div>
-      </nav>
-    </>
+        <div className="flex items-center gap-2">
+          <LabelSearch />
+          <MenuResponsive />
+        </div>
+      </div>
+    </nav>
   );
 }
 
