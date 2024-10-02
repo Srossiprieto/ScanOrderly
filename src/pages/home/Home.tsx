@@ -9,7 +9,7 @@ function Home() {
       <div className="flex mt-24 p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
         <div className="flex-col max-w-[1200px] w-full items-start md:items-center">
           <ButtonHomeUi text="Backed by" href="https://github.com/Srossiprieto/ScanOrderly"/>
-          <div className="flex flex-col gap-10 justify-between">
+          <div className="gap-3 flex flex-col sm:gap-10 justify-between">
             <h1 className="text-[58px] mt-4 font-semibold max-w-[800px] mx-0 md:mx-auto md:text-7xl tracking-tight leading-tight">
               Software Para Restaurantes
               <span className="font-bold text-7xl">.</span>
@@ -25,8 +25,8 @@ function Home() {
             </div>
           </div>
         </div>
+        <SoftwareCardHome></SoftwareCardHome>
       </div>
-      <SoftwareCardHome></SoftwareCardHome>
     </>
   );
 }

@@ -30,7 +30,7 @@ function CardNav({ text }: CardNavProps) {
           <ChevronUp className="pt-1 w-4 h-4 transition-opacity duration-200 opacity-0 group-hover:opacity-100 absolute top-0 left-0" />
         </div>
       </button>
-      <div className="absolute z-50 left-[-10px] top-full w-[300px] pointer-events-none opacity-0 origin-top-left duration-200 transform group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-hover:transform-none border border-[#25252B] card rounded-md shadow-lg bg-[rgb(21 21 25 / 82%)] ">
+      <div className="absolute z-50 left-[-10px] top-full w-[300px] pointer-events-none opacity-0 origin-top-left duration-200 transform group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-hover:transform-none border border-[#25252B] bg-gray-black rounded-md shadow-lg bg-[rgb(21 21 25 / 82%)] ">
         <ListNavLinks  links={navLinks} />
       </div>
     </div>
