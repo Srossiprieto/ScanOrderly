@@ -69,8 +69,10 @@ function Navbar() {
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
               className="text-gray-300 hover:text-white focus:outline-none"
+              aria-label="Buscar"
             >
-              <SearchIcon className="w-5 h-5 text-gray-300 hover:text-white" />
+                <SearchIcon className="w-5 h-5 text-gray-300 hover:text-white" />
+
             </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}

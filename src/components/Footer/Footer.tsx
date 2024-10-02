@@ -12,6 +12,7 @@ function Footer() {
             className="x"
             href="https://github.com/Srossiprieto/ScanOrderly"
             target="_blank"
+            aria-label="Github Icon"
           >
             <GitHubIcon className="text-white" />
           </a>
