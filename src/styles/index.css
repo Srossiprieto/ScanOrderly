@@ -15,5 +15,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  .card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(21, 21, 25, 0.684);
+    border-radius: 12px;
+    border: 1px solid rgba(192, 192, 192, 0.125);
+  }
+
 }
 

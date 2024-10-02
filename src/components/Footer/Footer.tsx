@@ -1,7 +1,7 @@
 
 function Footer() {
   return (
-    <div className="bg-red-500">
+    <div className="relative max-w-screen-lg mx-auto bg-red-500">
       Footer
     </div>
   )

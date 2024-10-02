@@ -3,7 +3,7 @@
 function Error() {
   return (
     <div>
-      error
+      error not found 
     </div>
   )
 }

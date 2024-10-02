@@ -1,10 +1,11 @@
 
+
 function Home() {
   return (
-    <div className="bg-blue-500">
-      Home
-    </div>
-  )
+    <>
+        <div className="relative flex flex-col min-h-dvh max-w-screen-lg mx-auto">Home</div>
+    </>
+  );
 }
 
-export default Home
+export default Home;
