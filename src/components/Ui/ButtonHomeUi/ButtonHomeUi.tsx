@@ -10,6 +10,7 @@ function ButtonHomeUi({ text, href }: ButtonHomeUiProps) {
     <a
       href={href}
       className="relative inline-block bg-[#1E1E23] bg-opacity-100 text-white text-sm font-medium py-1 px-4 rounded-full transition-colors duration-200 overflow-hidden group"
+      target="_blank"
     >
       <span className="flex items-center relative">
         <span className="mr-2">{text}</span>
