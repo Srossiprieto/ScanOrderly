@@ -11,7 +11,7 @@ function ButtonHomeUi({ text, href }: ButtonHomeUiProps) {
       href={href}
       className="relative inline-block bg-[#1E1E23] bg-opacity-100 text-white text-sm font-medium py-1 px-4 rounded-full transition-colors duration-200 overflow-hidden group"
     >
-      <span className="flex items-center relative z-10">
+      <span className="flex items-center relative">
         <span className="mr-2">{text}</span>
         <span className="bg-[#3E424A] border rounded-lg border-white font-bold w-6 h-6 text-center leading-8 flex items-center justify-center">
           <GitHubIcon className="w-4 h-4 text-white" />

@@ -18,9 +18,9 @@
   --hover-gray-light: #6a6a6a38; /* Nuevo color de hover más luminoso */
 
   .card {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(21, 21, 25, 0.684);
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.937);
     border-radius: 12px;
     border: 1px solid rgba(192, 192, 192, 0.125);
   }
@@ -34,15 +34,15 @@
     position: fixed;
     top: 0;
     width: 100%;
-    backdrop-filter: blur(4px) saturate(180%);
-    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgb(21 21 25 / var(--tw-bg-opacity));
-    z-index: 1000;
+    z-index: 1;
     transition: background-color 0.3s ease;
   }
 
   .navbar-transparent {
-    background-color: transparent;
+    background-color:rgba(21, 21, 25, 0.799) ;
   }
 
   .hover-gray {

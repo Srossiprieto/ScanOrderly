@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <body className="relative min-h-screen flex flex-col bg-gray-black">
+    <div className="relative min-h-screen flex flex-col bg-gray-black">
       <header>
         <Navbar />
       </header>
@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <footer>
         <Footer />
       </footer>
-    </body>
+    </div>
   );
 };
 

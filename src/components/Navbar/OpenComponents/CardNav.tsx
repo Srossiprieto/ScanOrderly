@@ -22,7 +22,7 @@ const navLinks = [
 
 function CardNav({ text }: CardNavProps) {
   return (
-    <div className="relative group">
+    <div className="relative group z-50 ">
       <button className="flex items-center justify-center text-center focus:outline-none">
         {text}
         <div className="relative">
