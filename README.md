@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# ScanOrderly
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![ScanOrderly Logo](./Desktop.webp)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ScanOrderly is a simple and efficient software designed for scanning and managing restaurant orders. Our goal is to streamline the ordering process, making it faster and more accurate for both customers and staff.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Easy Scanning**: Quickly scan and process orders with minimal effort.
+- **Order Management**: Efficiently manage and track orders in real-time.
+- **User-Friendly Interface**: Intuitive design that is easy to navigate.
+- **Cross-Platform**: Available on both desktop and mobile devices.
 
-- Configure the top-level `parserOptions` property like this:
+## Creators
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Santino Rossi & Juanes Code
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="text-align: center;">
+    <img src='./santino-github.webp' height="100px" width="100px" alt="Santino Rossi">
+    <p>GitHub: <a href="https://github.com/SantinoRossi">SantinoRossi</a></p>
+  </div>
+  <div style="text-align: center;">
+    <img src='./juanes-github.webp' height="100px" width="100px" alt="Juanes Code">
+    <p>GitHub: <a href="https://github.com/JuanesCode">JuanesCode</a></p>
+  </div>
+</div>
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Screenshots
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Desktop View
+![Desktop View](./Desktop.webp)
+
+### Mobile View
+![Mobile View](./Phones.webp)

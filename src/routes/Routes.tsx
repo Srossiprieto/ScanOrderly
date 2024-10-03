@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from '../pages/home/Home';
-import About from '../pages/about/About';
-import Error from '../pages/error/Error';
+import Skeleton from '../components/Skeleton/Skeleton';
 
+const Home = lazy(() => import('../pages/home/Home'));
+const About = lazy(() => import('../pages/about/About'));
+const Error = lazy(() => import('../pages/error/Error'));
 
 const AppRoutes: React.FC = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="*" element={<Error />} />
-    </Routes>
+    <Suspense fallback={<Skeleton/>}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Suspense>
   );
 };
 

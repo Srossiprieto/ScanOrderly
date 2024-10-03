@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Suspense, useEffect, useState } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import ScanOrderly from "../../assets/ScanOrderly";
 import CardNav from "./OpenComponents/CardNav";
 import SearchIcon from "../../assets/SearchIcon";
@@ -83,6 +83,9 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      <Suspense fallback={<h3>Loading....</h3>}>
+        <Outlet/>
+      </Suspense>
 
       <LabelSearch isSearchOpen={isSearchOpen} handleSearchClose={handleSearchClose} />
       <MenuResponsive isMenuOpen={isMenuOpen} handleMenuClose={handleMenuClose} />
