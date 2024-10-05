@@ -8,17 +8,20 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="relative min-h-screen flex flex-col bg-gray-black">
+    <>
+    <div className="bg-black">
       <header>
         <Navbar />
       </header>
-      <main className="flex-grow">
+      <main>
         {children}
       </main>
       <footer>
         <Footer />
       </footer>
     </div>
+    </>
+    
   );
 };
 

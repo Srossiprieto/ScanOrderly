@@ -18,7 +18,7 @@ function MenuResponsive({ isMenuOpen, handleMenuClose }: MenuResponsiveProps) {
     >
       <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm" />
       <div
-        className="relative w-full h-full bg-gray-black text-gray-300 z-50 flex flex-col transform transition-transform duration-300"
+        className="relative w-full h-full bg-black text-gray-300 z-50 flex flex-col transform transition-transform duration-300"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between items-center px-3 py-3 border-b border-[#25252B]">
