@@ -41,9 +41,9 @@ const ReviewCard = ({
       className={cn(
         "relative h-40 w-36 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+        // "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+        "border-gray-50/[.1] bg-gray-50/[.10] hover:bg-gray-50/[.15]"
       )}
     >
       <div className="flex flex-row items-center gap-2">
@@ -75,7 +75,7 @@ export function MarqueeDemoVertical() {
     ))}
   </Marquee>
 
-  {/* Gradiente superior */}
+
   <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black to-transparent pointer-events-none"></div>
   
 
