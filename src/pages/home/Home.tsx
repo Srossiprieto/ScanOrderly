@@ -5,12 +5,14 @@ import { ParticlesDemo } from "@/components/Ui/BgParticles/BgParticles";
 import SoftwareCardHome from "@/components/SoftwareCardHome/SoftwareCardHome";
 import { MarqueeDemoVertical } from "@/components/Marquee/MarqueeVertical";
 import { MarqueeDemo } from "@/components/Marquee/Marquee";
+import BlurCircle from "@/components/BlurCicle/BlurCircle";
+import PricingPlans from "@/components/pricing/pricing";
 
 function Home() {
   return (
     <>
       <ParticlesDemo>
-        <div className="relative flex mt-24 p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
+        <div className="relative flex mt-24 p-3 flex-col min-h-full max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
           <div className="flex-col max-w-[1200px] w-full items-start md:items-center">
             <AnimatedShinyTextDemo />
             <div className="flex flex-col justify-between gap-3 sm:gap-10">
@@ -36,15 +38,13 @@ function Home() {
             </BlurCircle>
           </div>
         </div>
-          <div className="hidden  md:flex max-w-screen-lg">
-          <MarqueeDemo />
-          </div>
-          
-          <MarqueeDemoVertical />
-
-
       </ParticlesDemo>
-      <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
+
+      <div className="relative flex p-3 flex-col min-h-full max-w-screen-2xl mx-auto justify-center text-left">
+        <PricingPlans />
+      </div>
+
+      <div className="relative mt-10 md:mt-0 flex p-3 flex-col min-h-full max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
         <MarqueeDemo />
         <MarqueeDemoVertical />
       </div>
