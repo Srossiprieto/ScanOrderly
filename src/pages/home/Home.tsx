@@ -5,7 +5,6 @@ import { ParticlesDemo } from "@/components/Ui/BgParticles/BgParticles";
 import SoftwareCardHome from "@/components/SoftwareCardHome/SoftwareCardHome";
 import { MarqueeDemoVertical } from "@/components/Marquee/MarqueeVertical";
 import { MarqueeDemo } from "@/components/Marquee/Marquee";
-import BlurCircle from "@/components/BlurCicle/BlurCircle";
 
 function Home() {
   return (
@@ -14,7 +13,7 @@ function Home() {
         <div className="relative flex mt-24 p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
           <div className="flex-col max-w-[1200px] w-full items-start md:items-center">
             <AnimatedShinyTextDemo />
-            <div className="gap-3 flex flex-col sm:gap-10 justify-between">
+            <div className="flex flex-col justify-between gap-3 sm:gap-10">
               <h1 className="text-[58px] mt-4 font-semibold max-w-[800px] mx-0 md:mx-auto md:text-7xl tracking-tight leading-tight">
                 Software Para Restaurantes
                 <span className="font-bold text-7xl">.</span>
@@ -37,6 +36,13 @@ function Home() {
             </BlurCircle>
           </div>
         </div>
+          <div className="hidden  md:flex max-w-screen-lg">
+          <MarqueeDemo />
+          </div>
+          
+          <MarqueeDemoVertical />
+
+
       </ParticlesDemo>
       <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
         <MarqueeDemo />
