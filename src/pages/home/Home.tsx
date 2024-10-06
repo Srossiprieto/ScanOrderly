@@ -5,6 +5,7 @@ import { ParticlesDemo } from "@/components/Ui/BgParticles/BgParticles";
 import SoftwareCardHome from "@/components/SoftwareCardHome/SoftwareCardHome";
 import { MarqueeDemoVertical } from "@/components/Marquee/MarqueeVertical";
 import { MarqueeDemo } from "@/components/Marquee/Marquee";
+import BlurCircle from "@/components/BlurCicle/BlurCircle";
 
 function Home() {
   return (
@@ -29,18 +30,18 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="pt-10">
-            <SoftwareCardHome />
+
+          <div className="py-32">
+            <BlurCircle>
+              <SoftwareCardHome />
+            </BlurCircle>
           </div>
         </div>
-          <div className="hidden  md:flex max-w-screen-lg">
-          <MarqueeDemo />
-          </div>
-          
-          <MarqueeDemoVertical />
-
-
       </ParticlesDemo>
+      <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
+        <MarqueeDemo />
+        <MarqueeDemoVertical />
+      </div>
     </>
   );
 }

@@ -9,7 +9,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-    <div className="bg-black">
+    <body className="bg-black">
       <header>
         <Navbar />
       </header>
@@ -19,9 +19,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <footer>
         <Footer />
       </footer>
-    </div>
+    </body>
     </>
-    
   );
 };
 
