@@ -3,6 +3,8 @@ import ButtonSecondary from "../../components/Ui/ButtonSecondary/ButtonSecondary
 import { AnimatedShinyTextDemo } from "@/components/Ui/ButtonHomeShiny/ButtonShiny";
 import { ParticlesDemo } from "@/components/Ui/BgParticles/BgParticles";
 import SoftwareCardHome from "@/components/SoftwareCardHome/SoftwareCardHome";
+import { MarqueeDemoVertical } from "@/components/Marquee/MarqueeVertical";
+import { MarqueeDemo } from "@/components/Marquee/Marquee";
 
 function Home() {
   return (
@@ -31,6 +33,13 @@ function Home() {
             <SoftwareCardHome />
           </div>
         </div>
+          <div className="hidden  md:flex max-w-screen-lg">
+          <MarqueeDemo />
+          </div>
+          
+          <MarqueeDemoVertical />
+
+
       </ParticlesDemo>
     </>
   );
