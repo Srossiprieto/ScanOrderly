@@ -4,40 +4,40 @@ import Marquee from "../Ui/marquee";
 
 const reviews = [
   {
-    name: "TheVikingRoom",
-    username: "@thevikingroom",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    name: "Omar",
+    username: "@omarCourt",
+    body: "La aplicacion es muy intuitiva y facil de usar, me encanta.",
     img: "https://avatar.vercel.sh/jack",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
+    name: "Daniel",
+    username: "@danielPerez",
+    body: "A mis clientes les encanta pedir por la aplicacion.",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "Ingaj",
+    username: "@Ingaj",
+    body: "La aplicacion me ayuda a llevar todos mis ventas y gastos mas de cerca.",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "Paulo",
+    username: "@PauloAlvarez",
+    body: "Me encanta la aplicacion, me ayuda a llevar un mejor control de mis ventas.",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "VikingRoom",
+    username: "@vikingroom",
+    body: "La aplicacion me ayuda a llevar un control de mi inventario mas organizado.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "PizzaShop",
+    username: "@pizzashop",
+    body: "Me encanta que puedo llevar todas mis ventas dia por dia y mes a mes.",
     img: "https://avatar.vercel.sh/john",
-  },
-  {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
-  },
-  {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
-  },
-  {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
   },
 ];
 
