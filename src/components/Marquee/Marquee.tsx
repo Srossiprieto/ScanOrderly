@@ -4,8 +4,8 @@ import Marquee from "../Ui/marquee";
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
+    name: "TheVikingRoom",
+    username: "@thevikingroom",
     body: "I've never seen anything like this before. It's amazing. I love it.",
     img: "https://avatar.vercel.sh/jack",
   },
@@ -92,8 +92,8 @@ export function MarqueeDemo() {
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-black "></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-black"></div>
+      <div className="absolute inset-y-0 left-0 w-1/3 pointer-events-none bg-gradient-to-r from-black "></div>
+      <div className="absolute inset-y-0 right-0 w-1/3 pointer-events-none bg-gradient-to-l from-black"></div>
     </div>
   );
 }

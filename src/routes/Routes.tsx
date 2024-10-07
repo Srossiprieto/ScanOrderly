@@ -5,6 +5,7 @@ import Skeleton from '../components/Skeleton/Skeleton';
 const Home = lazy(() => import('../pages/home/Home'));
 const About = lazy(() => import('../pages/about/About'));
 const Error = lazy(() => import('../pages/error/Error'));
+const Contact = lazy(() => import('../pages/contact/contact'));
 
 const AppRoutes: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Suspense>

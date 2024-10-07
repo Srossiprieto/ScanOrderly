@@ -15,7 +15,7 @@ export function ParticlesDemo({ children }: ParticlesDemoProps) {
   }, [theme]);
 
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background">
+    <div className="relative flex flex-col items-center justify-center w-full h-full overflow-hidden rounded-lg bg-background">
       <Particles
         className="absolute inset-0"
         quantity={100}

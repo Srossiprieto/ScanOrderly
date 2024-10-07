@@ -3,21 +3,39 @@ import Marquee from "../Ui/marquee";
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    name: "Omar",
+    username: "@omarCourt",
+    body: "La aplicacion es muy intuitiva y facil de usar, me encanta.",
     img: "https://avatar.vercel.sh/jack",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
+    name: "Daniel",
+    username: "@danielPerez",
+    body: "A mis clientes les encanta pedir por la aplicacion.",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "Ingaj",
+    username: "@Ingaj",
+    body: "La aplicacion me ayuda a llevar todos mis ventas y gastos mas de cerca.",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "Paulo",
+    username: "@PauloAlvarez",
+    body: "Me encanta la aplicacion, me ayuda a llevar un mejor control de mis ventas.",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "VikingRoom",
+    username: "@vikingroom",
+    body: "La aplicacion me ayuda a llevar un control de mi inventario mas organizado.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "PizzaShop",
+    username: "@pizzashop",
+    body: "Me encanta que puedo llevar todas mis ventas dia por dia y mes a mes.",
     img: "https://avatar.vercel.sh/john",
   },
 ];
@@ -76,10 +94,10 @@ export function MarqueeDemoVertical() {
   </Marquee>
 
 
-  <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black to-transparent pointer-events-none"></div>
+  <div className="absolute inset-x-0 top-0 h-24 pointer-events-none bg-gradient-to-b from-black to-transparent"></div>
   
 
-  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+  <div className="absolute inset-x-0 bottom-0 h-24 pointer-events-none bg-gradient-to-t from-black to-transparent"></div>
 </div>
 
     </>

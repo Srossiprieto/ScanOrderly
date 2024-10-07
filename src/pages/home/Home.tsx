@@ -6,7 +6,7 @@ import SoftwareCardHome from "@/components/SoftwareCardHome/SoftwareCardHome";
 import { MarqueeDemoVertical } from "@/components/Marquee/MarqueeVertical";
 import { MarqueeDemo } from "@/components/Marquee/Marquee";
 import Services from "@/components/pricing/pricing";
-import { AnimatedBeamDemo } from "@/components/animated-beam/animated-beam";
+
 function Home() {
   return (
     <>
@@ -16,16 +16,14 @@ function Home() {
             <AnimatedShinyTextDemo />
             <div className="flex flex-col justify-between gap-3 sm:gap-10">
               <h1 className="text-[58px] mt-4 font-semibold max-w-[800px] mx-0 md:mx-auto md:text-7xl tracking-tight leading-tight">
-                Software Para Restaurantes
+                  ScanOrderly
                 <span className="font-bold text-7xl">.</span>
               </h1>
               <p className="max-w-[600px] mx-0 md:mx-auto text-[20px]">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                nam alias iste, culpa omnis in? Fugiat doloremque deleniti
-                impedit, hola.
+               ¿Quieres impulsar tu empresa al siguiente nivel? ScanOrderly es la solución que necesitas.
               </p>
               <div className="flex justify-start gap-2 md:justify-center">
-                <ButtonPrimary text="Get started free" />
+                <ButtonPrimary text="Get started free"/>
                 <ButtonSecondary text="Book a demo" />
               </div>
             </div>
@@ -40,7 +38,6 @@ function Home() {
 
         <MarqueeDemoVertical />
         <Services />
-        <AnimatedBeamDemo />
       </ParticlesDemo>
     </>
   );
