@@ -43,7 +43,9 @@ function Home() {
       <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto justify-center">
         <BentoDemo></BentoDemo>
       </div>
-       <PricingPlans />
+      <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-2xl mx-auto items-start justify-center text-left">
+        <PricingPlans />
+      </div>
       <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
         <MarqueeDemo />
         <MarqueeDemoVertical />
