@@ -6,7 +6,7 @@ import SoftwareCardHome from "@/components/SoftwareCardHome/SoftwareCardHome";
 import { MarqueeDemoVertical } from "@/components/Marquee/MarqueeVertical";
 import { MarqueeDemo } from "@/components/Marquee/Marquee";
 import BlurCircle from "@/components/BlurCicle/BlurCircle";
-import PricingPlans from "@/components/pricing/pricing";
+import { BentoDemo } from "@/components/BentoGrid/BentoGrid";
 
 function Home() {
   return (
@@ -39,12 +39,10 @@ function Home() {
           </div>
         </div>
       </ParticlesDemo>
-
-      <div className="relative flex p-3 flex-col min-h-full max-w-screen-2xl mx-auto justify-center text-left">
-        <PricingPlans />
+      <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto justify-center">
+        <BentoDemo></BentoDemo>
       </div>
-
-      <div className="relative mt-10 md:mt-0 flex p-3 flex-col min-h-full max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
+      <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
         <MarqueeDemo />
         <MarqueeDemoVertical />
       </div>
