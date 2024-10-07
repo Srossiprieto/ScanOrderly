@@ -9,12 +9,10 @@ const PricingPlans = () => {
     <div className="max-w-screen-2xl md:px-12 md:py-24" id="pricing">
       <div className="py-8 text-center text-white bg-black">
         <h2 className="mb-2 text-4xl font-bold">
-          Simple pricing for everyone.
+          Precios sencillos para todos.
         </h2>
         <p className="text-lg font-light">
-          Choose an <span className="font-semibold">affordable plan</span>{" "}
-          that's packed with the best features for engaging your audience,
-          creating customer loyalty, and driving sales.
+          Elija un <span className="font-semibold">plan accesible</span> que esté repleto de las mejores funciones para atraer a su audiencia, fidelizar a los clientes e impulsar las ventas.
         </p>
       </div>
 
@@ -44,9 +42,15 @@ const PricingPlans = () => {
             <hr className="mt-4 h-px w-full border-none bg-gradient-to-r from-neutral-200/0 via-neutral-500/30 to-neutral-200/0" />
             <ul className="mt-6">
               {plan.features.map((feature, index) => (
-                <li key={index} className="flex gap-2 mb-3 items-center text-white">
+                <li
+                  key={index}
+                  className="flex gap-2 mb-3 items-center text-white"
+                >
                   <div className="flex items-center justify-center w-5 h-5 bg-green-500 border-2 border-green-500 rounded-full">
-                    <Check size={14} className="text-white flex justify-center items-center" />
+                    <Check
+                      size={14}
+                      className="text-white flex justify-center items-center"
+                    />
                   </div>
                   {feature}
                 </li>

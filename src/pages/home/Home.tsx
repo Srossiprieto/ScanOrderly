@@ -7,6 +7,7 @@ import { MarqueeDemoVertical } from "@/components/Marquee/MarqueeVertical";
 import { MarqueeDemo } from "@/components/Marquee/Marquee";
 import BlurCircle from "@/components/BlurCicle/BlurCircle";
 import { BentoDemo } from "@/components/BentoGrid/BentoGrid";
+import PricingPlans from "@/components/pricing/pricing";
 
 function Home() {
   return (
@@ -42,6 +43,7 @@ function Home() {
       <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto justify-center">
         <BentoDemo></BentoDemo>
       </div>
+       <PricingPlans />
       <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
         <MarqueeDemo />
         <MarqueeDemoVertical />
