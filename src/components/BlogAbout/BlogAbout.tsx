@@ -1,7 +1,7 @@
 import ScanOrderlyL from "../../assets/ScanOrderlyL.png";
+import { AnimatedBeamDemo } from "../AnimatedBeamMultiple/AnimatedBeamMultiple";
 // import Stars from "../../assets/Stars.webp";
 // import Target from "../../assets/Target.webp";
-import { AnimatedBeamDemo } from "../animated-beam/animated-beam";
 import { BentoDemo } from "../BentoGrid/BentoGrid";
 import BlurDecoration from "../BlurDecoration/BlurDecoration";
 
@@ -44,8 +44,10 @@ function BlogAbout() {
               cada cliente. ¡Confía en nosotros y lleva tu restaurante al
               siguiente nivel!
             </p>
-              <AnimatedBeamDemo />
           </div>
+        </div>
+        <div className="relative z-0 ">
+          <AnimatedBeamDemo/>
         </div>
       </div>
     </>
