@@ -1,8 +1,7 @@
 import { ChevronRight, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import ScanOrderly from "../../../assets/ScanOrderly";
 import ButtonPrimary from "../../Ui/ButtonPrimary/ButtonPrimary";
-
+import ScanOrderlyL from '../../../assets/ScanOrderlyL.png';
 interface MenuResponsiveProps {
   isMenuOpen: boolean;
   handleMenuClose: () => void;
@@ -23,7 +22,7 @@ function MenuResponsive({ isMenuOpen, handleMenuClose }: MenuResponsiveProps) {
       >
         <div className="flex justify-between items-center px-3 py-3 border-b border-[#25252B]">
           <div className="flex justify-center items-center gap-2">
-            <ScanOrderly className="w-5 h-5" />
+          <img src={ScanOrderlyL} alt="ScanOrderly" className="w-7 h-7" />
             <h2 className="text-lg font-semibold">Menu</h2>
           </div>
           <button

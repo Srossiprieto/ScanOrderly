@@ -8,6 +8,8 @@ import { MarqueeDemo } from "@/components/Marquee/Marquee";
 import BlurCircle from "@/components/BlurCicle/BlurCircle";
 import { BentoDemo } from "@/components/BentoGrid/BentoGrid";
 import PricingPlans from "@/components/pricing/pricing";
+import ContactForm from "@/components/ContactForm/ContactForm";
+import BlurCircleDecoration from "@/components/BlurCicleDecoration/BlurCircleDecoration";
 
 function Home() {
   return (
@@ -41,10 +43,17 @@ function Home() {
         </div>
       </ParticlesDemo>
       <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto justify-center">
+      <h3 className="text-2xl font-bold mb-4 uppercase">Características de ScanOrderly tu software de confianza.</h3>
         <BentoDemo></BentoDemo>
       </div>
       <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-2xl mx-auto items-start justify-center text-left">
         <PricingPlans />
+      </div>
+      <div className="flex justify-center items-center min-h-[65vh] mt-[100px]">
+        <div className="w-full max-w-lg p-3">
+          <BlurCircleDecoration/>
+          <ContactForm />
+        </div>
       </div>
       <div className="relative flex p-3 flex-col min-h-[65dvh] max-w-screen-lg mx-auto items-start justify-center text-left md:items-center md:text-center">
         <MarqueeDemo />

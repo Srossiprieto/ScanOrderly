@@ -1,4 +1,3 @@
-"use client";
 
 import React, { forwardRef, useRef } from "react";
 
@@ -36,7 +35,7 @@ export function AnimatedBeamDemo() {
 
   return (
     <div
-      className="relative flex h-[500px] w-full items-center justify-center bg-background p-10 md:shadow-xl"
+      className="relative flex h-[300px] w-full items-center justify-center bg-background md:shadow-xl"
       ref={containerRef}
     >
       <div className="flex size-full flex-col max-w-lg max-h-[200px] items-stretch justify-between gap-10">
