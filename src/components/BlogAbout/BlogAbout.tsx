@@ -8,7 +8,7 @@ import BlurDecoration from "../BlurDecoration/BlurDecoration";
 function BlogAbout() {
   return (
     <>
-      <div className="flex flex-col relative">
+      <div className="flex flex-col relative ">
         <div className="flex items-center gap-2">
           <img src={ScanOrderlyL} alt="scanlogo" className="w-10 h-10 mt-3" />
           <h3 className="text-2xl font-bold mb-2 uppercase mt-6">
@@ -44,13 +44,10 @@ function BlogAbout() {
               cada cliente. ¡Confía en nosotros y lleva tu restaurante al
               siguiente nivel!
             </p>
-            <div className="z-0">
               <AnimatedBeamDemo />
-            </div>
           </div>
         </div>
       </div>
-      <BlurDecoration className="bottom-0 right-[-500px]" />
     </>
   );
 }
