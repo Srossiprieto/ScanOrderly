@@ -3,7 +3,7 @@ import React, { forwardRef, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/Ui/animated-beam";
 import { ChefHat, UserRound, Users } from "lucide-react";
-import ScanOrderly from "@/assets/ScanOrderly";
+import ScanOrderlyL from "@/assets/ScanOrderlyL.png";
 
 const Circle = forwardRef<
   HTMLDivElement,
@@ -66,7 +66,7 @@ export function AnimatedBeamMultipleOutputDemo({
         </div>
         <div className="flex flex-col justify-center">
           <Circle ref={div6Ref} className="size-16 bg-black">
-            <ScanOrderly />
+            <img src={ScanOrderlyL} alt="ScanOrderly" />
           </Circle>
         </div>
         <div className="flex flex-col justify-center">

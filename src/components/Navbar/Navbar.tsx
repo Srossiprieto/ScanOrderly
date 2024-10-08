@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useState } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
-import ScanOrderly from "../../assets/ScanOrderly";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+import ScanOrderlyL from "../../assets/ScanOrderlyL.png";
 import CardNav from "./OpenComponents/CardNav";
 import SearchIcon from "../../assets/SearchIcon";
 import MenuItem from "../../assets/MenuItem";
@@ -46,22 +46,37 @@ function Navbar() {
       <nav className={`fixed-navbar p-3 border-b border-[#25252B] mx-auto ${isScrolled ? "navbar-transparent" : ""}`}>
         <div className="container mx-auto flex justify-between items-center max-w-screen-lg">
           <div className="flex items-center gap-5 text-[14px] text-[#b1b3b6] font-normal">
-            <Link to="/">
+            <NavLink to="/">
               <div className="flex items-center gap-2">
-                <ScanOrderly width={25} height={25} />
+                <img src={ScanOrderlyL} alt="ScanOrderly" className="w-7 h-7" />
                 <p className="font-bold text-[1rem] text-[#edeef1]">ScanOrderly</p>
               </div>
-            </Link>
+            </NavLink>
             <div className="hidden md:flex space-x-4">
-              <Link to="/" className="hover:text-white">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-[#c4c4c4] font-bold " : "hover:text-white"
+                }
+              >
                 Home
-              </Link>
-              <Link to="/about" className="hover:text-white">
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "text-[#c4c4c4]  font-bold " : "hover:text-white"
+                }
+              >
                 About
-              </Link>
-              <Link to="/contact" className="hover:text-white">
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "text-[#c4c4c4]  font-bold " : "hover:text-white"
+                }
+              >
                 Contact
-              </Link>
+              </NavLink>
               <CardNav text="More" />
             </div>
           </div>
@@ -71,8 +86,7 @@ function Navbar() {
               className="text-gray-300 hover:text-white focus:outline-none"
               aria-label="Buscar"
             >
-                <SearchIcon className="w-5 h-5 text-gray-300 hover:text-white" />
-
+              <SearchIcon className="w-5 h-5 text-gray-300 hover:text-white" />
             </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -84,7 +98,7 @@ function Navbar() {
         </div>
       </nav>
       <Suspense fallback={<h3>Loading....</h3>}>
-        <Outlet/>
+        <Outlet />
       </Suspense>
 
       <LabelSearch isSearchOpen={isSearchOpen} handleSearchClose={handleSearchClose} />

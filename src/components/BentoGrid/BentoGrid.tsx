@@ -112,7 +112,6 @@ const features = [
 export function BentoDemo() {
   return (
     <div>
-      <h3 className="text-2xl font-bold mb-4 uppercase">Características de ScanOrderly tu software de confianza.</h3>
       <BentoGrid>
         {features.map((feature, idx) => (
           <BentoCard key={idx} {...feature} />
