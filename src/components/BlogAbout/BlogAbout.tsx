@@ -32,7 +32,7 @@ function BlogAbout() {
         <div className="relative mt-4">
           <BentoDemo />
           <div className="relative">
-            <h3 className="text-2xl font-bold mb-2 uppercase p-2">
+            <h3 className="text-2xl font-bold mb-2 uppercase ">
               Nuestro Equipo
             </h3>
             <p className="text-lg font-semibold">

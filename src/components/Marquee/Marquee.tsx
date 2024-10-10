@@ -1,46 +1,44 @@
 import { cn } from "@/lib/utils";
 import Marquee from "../Ui/marquee";
 
-
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    name: "Carlos",
+    username: "@carlos",
+    body: "Este software ha revolucionado la forma en que gestionamos nuestro restaurante. ¡Es increíble!",
+    img: "https://avatar.vercel.sh/carlos",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    name: "María",
+    username: "@maria",
+    body: "No puedo creer lo fácil que es usar este software. Ha hecho todo mucho más eficiente.",
+    img: "https://avatar.vercel.sh/maria",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    name: "Luis",
+    username: "@luis",
+    body: "Desde que implementamos este software, hemos visto una mejora significativa en la organización de las órdenes.",
+    img: "https://avatar.vercel.sh/luis",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
+    name: "Ana",
+    username: "@ana",
+    body: "El software es muy intuitivo y ha facilitado mucho nuestro trabajo diario en el restaurante.",
+    img: "https://avatar.vercel.sh/ana",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
+    name: "Pedro",
+    username: "@pedro",
+    body: "La precisión y eficiencia de este software son impresionantes. Lo recomiendo totalmente.",
+    img: "https://avatar.vercel.sh/pedro",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
+    name: "Lucía",
+    username: "@lucia",
+    body: "Este software ha mejorado la experiencia tanto para el personal como para los clientes. ¡Es fantástico!",
+    img: "https://avatar.vercel.sh/lucia",
   },
 ];
-
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
