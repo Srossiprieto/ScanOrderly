@@ -5,13 +5,17 @@ import { Link } from "react-router-dom";
 
 const PricingPlans = () => {
   return (
-    <div className=" max-w-full justify-center flex items-center flex-col md:px-12 md:py-24" id="pricing">
+    <div
+      className=" max-w-full justify-center flex items-center flex-col md:px-12 md:py-24"
+    >
       <div className="py-8 text-center justify-center items-center text-white bg-black">
-        <h2 className="mb-2 text-4xl font-bold">
-          Precios sencillos para todos.
+        <h2 className="mb-2 text-4xl font-bold text-left">
+          Planes de <span className="text-orange-300">precios</span> claros y <span className="text-orange-300">accesibles</span>  para todos.
         </h2>
-        <p className="text-lg font-light">
-          Elija un <span className="font-semibold">plan accesible</span> que esté repleto de las mejores funciones para atraer a su audiencia, fidelizar a los clientes e impulsar las ventas.
+        <p className="text-lg font-light text-left">
+          Seleccione un <span className="font-semibold">plan adecuado</span> que
+          incluya las funcionalidades más avanzadas para captar su audiencia,
+          fidelizar a sus clientes y aumentar sus ventas.
         </p>
       </div>
 
