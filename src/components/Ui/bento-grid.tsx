@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const BentoGrid = ({
   children,
@@ -28,7 +29,6 @@ const BentoCard = ({
   background,
   Icon,
   description,
-  href,
   cta,
 }: {
   name: string;
@@ -66,7 +66,8 @@ const BentoCard = ({
     >
       <button className="pointer-events-auto">
         <div className="items-center bg-transparent px-3 py-1 text-gray-400 rounded-full border border-transparent hover:bg-[--hover-gray-light] hover:text-[#F9FAFD] transition-all duration-300 flex text-sm gap-2"> 
-          <a href={href}>{cta}</a>
+          <Link to='/contact'>{cta}
+          </Link>
           <ChevronRight className="w-4 h-4" />
         </div>
       </button>

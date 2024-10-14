@@ -1,6 +1,6 @@
 # ScanOrderly
 
-![ScanOrderly Logo](./Desktop.webp)
+![ScanOrderly Logo](./Port.webp)
 
 ## Overview
 
@@ -31,7 +31,8 @@ ScanOrderly is a simple and efficient software designed for scanning and managin
 ## Screenshots
 
 ### Desktop View
-![Desktop View](./Desktop.webp)
+![Desktop View](./src/assets/softwareImg/shotsDark.webp)
+![Desktop View](./src/assets/softwareImg/shotsWhite.png)
 
 ### Mobile View
 ![Mobile View](./Phones.webp)

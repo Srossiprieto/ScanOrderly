@@ -9,14 +9,14 @@ const navLinks = [
   {
     to: "/services",
     icon: <Box className="h-3 w-3" />,
-    text: "Services",
-    description: "Lorem ipsum dolor sit. lorem lorem.",
+    text: "Servicios",
+    description: "Marca la diferencia con nuestros servicios.",
   },
   {
     to: "/pricing",
     icon: <CircleDollarSign className="h-3 w-3" />,
-    text: "Pricing",
-    description: "Lorem ipsum dolor sit. lorem lorem.",
+    text: "Precios",
+    description: "Conoce nuestros planes y precios.",
   },
 ];
 

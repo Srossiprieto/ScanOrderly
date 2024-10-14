@@ -1,6 +1,6 @@
 import { BorderBeamDemo } from '../Ui/BorderBeam/BorderBeam';
 // import ScanOrderlySoftware from '../../assets/ScanOrderlySoftware.webp';
-import ShotsDark from '../../assets/shotsDark.png';
+import ShotsDark from '../../assets/softwareImg/shotsDark.webp';
 import PhonesSoftware from '../../../Phones.webp';
 
 function SoftwareCardHome() {

@@ -9,7 +9,7 @@ import Marquee from "../Ui/marquee";
 import { AnimatedListDemo } from "../AnimatedList/AnimatedList";
 import { BentoCard, BentoGrid } from "../Ui/bento-grid";
 import { AnimatedBeamMultipleOutputDemo } from "../AnimatedBeam/AnimatedBeam";
-import Panel from "@/assets/Panel.webp";
+import Panel from "@/assets/softwareImg/Panel.webp";
 
 const files = [
   {
@@ -17,8 +17,8 @@ const files = [
     body: "La versión más reciente del menú del restaurante, incluyendo todos los platos y precios.",
   },
   {
-    name: "Gráficos",
-    body: "Una hoja de cálculo que contiene toda la información de los gráficos de ventas y gastos.",
+    name: "Tablas",
+    body: "Una hoja de cálculo que contiene toda la información de las tablas de ventas y gastos",
   },
   {
     name: "Logo",

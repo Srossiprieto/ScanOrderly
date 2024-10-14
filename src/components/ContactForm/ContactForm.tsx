@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { Toaster, toast } from "sonner";
+import Loader from "../Loader/Loader";
 
 const ContactForm = () => {
   const formik = useFormik({
@@ -115,7 +116,7 @@ const ContactForm = () => {
                   : "bg-[#F9FAFD]"
               } px-5 py-2 text-[#151519] rounded-lg border border-transparent hover:border-[#F9FAFD] hover:text-[#F9FAFD] hover:bg-transparent transition-all duration-300`}
             >
-              {formik.isSubmitting ? "Enviando..." : "Enviar"}
+              {formik.isSubmitting ? <Loader/> : "Enviar"}
             </button>
           </div>
         </form>

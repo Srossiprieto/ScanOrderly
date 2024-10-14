@@ -1,4 +1,4 @@
-import GitHubIcon from "../../../assets/GithubIcon";
+import GitHubIcon from "../../../assets/icons/GithubIcon";
 
 interface ButtonHomeUiProps {
   text: string;

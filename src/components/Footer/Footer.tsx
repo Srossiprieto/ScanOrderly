@@ -1,5 +1,5 @@
-import GitHubIcon from "../../assets/GithubIcon";
-import ScanOrderly from "@/assets/ScanOrderly";
+import GitHubIcon from "../../assets/icons/GithubIcon";
+import ScanOrderly from "@/assets/icons/ScanOrderly";
 
 function Footer() {
   return (
@@ -25,10 +25,18 @@ function Footer() {
       <div className="flex justify-between items-center mt-5 p-3 max-w-screen-lg mx-auto text-left text-white">
         <div className="text-base">
           © 2024 Todos los derechos reservados.
-          <span className="hover:text-blue-500 cursor-pointer">
+          <span className="hover:text-orange-300 cursor-pointer">
             {" "}
-            ScanOrderly
+            <a href="https://santinorossi.vercel.app/" target="_blank">Santino Rossi</a>
           </span>
+          <span>
+          {" "}&{" "}
+          </span>
+          <span className="hover:text-orange-300 cursor-pointer">
+            {" "}
+            <a href="https://portfolio-juanescode.netlify.app/" target="_blank">JuanesCode</a>
+          </span>
+           
         </div>
         <div className="flex space-x-4 items-center">
           <a
