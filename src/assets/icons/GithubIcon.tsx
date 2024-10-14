@@ -11,7 +11,6 @@ const GitHubIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
     <path
       d="M10 20.5675C6.57143 21.7248 3.71429 20.5675 2 17"
       stroke="currentColor"
-      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />

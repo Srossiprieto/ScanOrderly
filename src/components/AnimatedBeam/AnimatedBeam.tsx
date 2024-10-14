@@ -3,7 +3,7 @@ import React, { forwardRef, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/Ui/animated-beam";
 import { ChefHat, UserRound, Users } from "lucide-react";
-import ScanOrderlyL from "@/assets/ScanOrderlyL.png";
+import ScanOrderlyL from "@/assets/softwareImg/ScanOrderlyL.png";
 
 const Circle = forwardRef<
   HTMLDivElement,

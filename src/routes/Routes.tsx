@@ -7,6 +7,7 @@ const About = lazy(() => import('../pages/about/About'));
 const Error = lazy(() => import('../pages/error/Error'));
 const Contact = lazy(() => import('../pages/contact/Contact'));
 const Pricing = lazy(() => import('../pages/Pricing/Pricing'));
+const ServicesPage = lazy(() => import('../pages/servicesPage/ServicesPage'));
 
 const AppRoutes: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/pricing" element={<Pricing/>} />
+        <Route path="/services" element={<ServicesPage/>} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Suspense>

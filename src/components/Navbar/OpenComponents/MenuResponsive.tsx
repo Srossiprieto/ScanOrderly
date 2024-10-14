@@ -1,7 +1,7 @@
 import { ChevronRight, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import ButtonPrimary from "../../Ui/ButtonPrimary/ButtonPrimary";
-import ScanOrderlyL from '../../../assets/ScanOrderlyL.png';
+import ScanOrderlyL from '../../../assets/softwareImg/ScanOrderlyL.png';
 interface MenuResponsiveProps {
   isMenuOpen: boolean;
   handleMenuClose: () => void;
@@ -70,7 +70,7 @@ function MenuResponsive({ isMenuOpen, handleMenuClose }: MenuResponsiveProps) {
           </Link>
         </div>
         <div className="p-4">
-          <ButtonPrimary text="Contactanos"/>
+          <ButtonPrimary text="Contáctanos"/>
         </div>
       </div>
     </div>
