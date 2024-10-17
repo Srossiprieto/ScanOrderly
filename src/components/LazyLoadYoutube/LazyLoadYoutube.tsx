@@ -1,5 +1,6 @@
 import { Play } from "lucide-react";
 import { useState } from "react";
+import VideoBg from "../../../VideoBg.png";
 
 interface LazyLoadYouTubeProps {
   videoId: string;
@@ -18,9 +19,9 @@ const LazyLoadYouTube: React.FC<LazyLoadYouTubeProps> = ({ videoId }) => {
         <div
           className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black cursor-pointer bg-cover bg-center"
           onClick={handleVideoClick}
-          style={{ backgroundImage: `url(https://img.youtube.com/vi/${videoId}/hqdefault.jpg)` }}
+          style={{ backgroundImage: `url(${VideoBg})` }}
         >
-          <Play className="w-[100px] h-[100px] border-4 border-white rounded-full p-4 text-white" />
+          <Play className="w-[100px] h-[100px] border-4 border-gray-500 rounded-full p-4 text-gray-500" />
         </div>
       ) : (
         <iframe
