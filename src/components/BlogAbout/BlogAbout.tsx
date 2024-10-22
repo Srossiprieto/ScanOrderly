@@ -11,7 +11,7 @@ function BlogAbout() {
   return (
     <>
       <div className="flex flex-col relative pt-6"> 
-        <LazyLoadYouTube videoId="oWxFz53X_Jg" />
+        <LazyLoadYouTube videoId="ZbIs6YGVcow" />
         <div className="flex items-center gap-2 ">
           <img src={ScanOrderlyL} alt="scanlogo" className="w-10 h-10 mt-3" />
           <h3 className="text-4xl font-bold mb-2 uppercase mt-6">
